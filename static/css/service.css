@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    background: rgb(0, 0, 0, 0.69) url('https://cdn.pixabay.com/photo/2021/06/04/15/50/skateboarding-6310245_960_720.jpg') no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
+    height: 100px;
+    margin: 64px 14px 7px 14px;
+}
+
+h1{
+    color: cadetblue;
+    font-family: 'Mate SC', serif;
+}
+
+.line{
+    background: #696969;
+    padding: 2px;
+    border-radius: 11px;
+    border: 1px solid black;
+    margin: 7px;
+}
+
+.services{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 34px;
+}
+
+.box{
+    background: rgba(70, 70, 70, 0.034);
+    border-radius: 11px;
+    max-width: 30%;
+    display: block;
+    text-align: center;
+    margin: 34px 7px;
+    /* border: 2px solid green; */
+}
+
+.innerbox{
+    background: rgba(70, 70, 70, 0.034);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #8f8f8f;
+    max-width: 30px;
+    padding: 20px 14px;
+    transform: rotate(45deg);
+    margin: 18px auto;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.innerbox:hover{
+    transform: rotate(-45deg);
+}
+
+.innerbox i{
+    color: cadetblue;
+    transform: rotate(-45deg);
+}
+
+h2{
+    font-family: 'Mate SC', serif;
+    color: cadetblue;
+    font-size: 1.2rem;
+    margin: 7px 0px;
+}
+
+p{
+    font-family: 'Hind Madurai', sans-serif;
+    color: rgb(226, 223, 241);
+    text-align: center;
+    font-size: 1.05rem;
+    padding: 11px;
+}
+
+.btn{
+    font-size: 1.7rem;
+    padding: 7px 84px;
+    border: 1px solid white;
+    border-radius: 11px;
+    margin: 10px 2px;
+    background: none;
+    color: #8f8f8f;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.3s ease;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn:hover{
+    background: cadetblue;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media screen and (max-width:900px) {
+    .box{
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .box{
+        max-width: 100%;
+    }
+}

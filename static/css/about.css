@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgba(0, 0, 0, 0.69) url('https://cdn.pixabay.com/photo/2018/10/06/07/27/detroit-3727417_960_720.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 111vh;
+}
+
+.aboutUs{
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+}
+
+.heading{
+    margin: 200px 14px 7px 14px;
+}
+
+h1{
+    color: cadetblue;
+    font-family: 'Mate SC', serif;
+}
+
+.line{
+    background: #696969;
+    padding: 2px;
+    border-radius: 11px;
+    border: 1px solid black;
+    margin: 7px;
+}
+
+.logo{
+    max-width: 40%;
+    transform: translateY(50px);
+}
+
+.logo img{
+    width: 100px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.logo img:hover{
+    transform: translateY(-5px)
+}
+
+.about{
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    background: rgba(78, 78, 78, 0.39);
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 64%;
+    padding: 100px 34px;
+    /* border: 2px solid black; */
+    border-radius: 14px;
+}
+
+/* h1::before{
+    content: "";
+    background: whitesmoke;
+    position: absolute;
+    height: 0.5%;
+    width: 7%;
+    left: 504px;
+    transform: translateY(34px);
+    border: 2px solid #000000;
+    border-radius: 11px;
+} */
+
+h2{
+    text-align: center;
+    font-family: 'Mate SC', serif;
+    color: cadetblue;
+    padding: 4px;
+}
+
+.text-lines{
+    max-width: 99%;
+    display: flex;
+}
+
+.text-lines i{
+    color: rgb(253, 38, 0);
+    padding: 7px 0px;
+    margin: 11px 2px;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    max-width: 99%;
+    color: rgb(255, 255, 230);
+    font-size: 1.25rem;
+    padding: 11px;
+    margin: 7px 2px;
+}
+
+.btn{
+    font-size: 1.7rem;
+    padding: 7px 84px;
+    border: 1px solid white;
+    border-radius: 11px;
+    margin: 34px 2px;
+    background: none;
+    color: #8f8f8f;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.3s ease;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn:hover{
+    background: cadetblue;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media screen and (max-width:804px){
+    .aboutUs{
+        height: 700px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .aboutUs{
+        height: 750px;
+    }
+
+    .heading{
+        margin-top: 250px;
+    }
+}
+
+@media screen and (max-width:370px){
+    .aboutUs{
+        height: 800px;
+    }
+}
+
+@media screen and (max-width:360px){
+
+    .aboutUs{
+        height: 850px;
+    }
+}
+
+@media screen and (max-width:340px){
+    .aboutUs{
+        height: 900px;
+    }
+}
+
+@media screen and (max-width:325px){
+    .aboutUs{
+        height: 975px;
+    }
+}
+
+@media screen and (max-width:300px){
+    .aboutUs{
+        height: 1200px;
+    }
+}

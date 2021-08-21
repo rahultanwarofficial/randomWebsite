@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(0, 0, 0, 0.8) url('https://cdn.pixabay.com/photo/2021/05/31/17/48/yachts-6299492_960_720.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading{
+    height: 100px;
+    margin: 64px 14px 7px 14px;
+}
+
+h1{
+    font-family: 'Mate SC', serif;
+    color: cadetblue;
+    font-family: 'Mate SC', serif;
+}
+
+.line{
+    background: #696969;
+    padding: 2px;
+    border-radius: 11px;
+    border: 1px solid black;
+    margin: 7px;
+}
+
+form{
+    height: 300px;
+    background: rgba(0, 0, 0, 0.178);
+    padding: 34px;
+    border-radius: 20px;
+    display: block;
+    max-width: 85%;
+    margin: 14px auto;
+    text-align: center;
+}
+
+.inputs{
+    margin: 18px 14px;
+}
+
+input{
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1px;
+    max-width: 100%;
+    color: white;
+    background: rgba(0, 0, 0, 0.123);
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 7px;
+    padding: 3px 11px;
+}
+
+.btn{
+    font-family: 'Mate SC', serif;
+    color: whitesmoke;
+    font-size: 1.1rem;
+    margin: 14px;
+    background: rgba(0, 0, 255, 0.034);
+    border: 2px solid grey;
+    border-radius: 11px;
+    padding: 2px 40px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover{
+    background: rgba(95, 158, 160, 0.233);
+    border: 2px solid black;
+    /* color: cadetblue; */
+}
+
+.btn-big{
+    font-size: 1.7rem;
+    padding: 7px 84px;
+    border: 1px solid white;
+    border-radius: 11px;
+    margin: 10px 2px;
+    background: none;
+    color: #8f8f8f;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.3s ease;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn-big:hover{
+    background: cadetblue;
+    color: white;
+}

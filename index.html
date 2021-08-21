@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://kit.fontawesome.com/75e6a07e84.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Roboto:ital,wght@1,100&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Rahul Tanwar</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="ham" onclick="hamBurger()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+            <img src="/static/img/rahul.jpg" alt="">
+        </div>
+        <ul id="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/service.html">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul id="nav-list2">
+            <li><a href="#home">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/service.html">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="rightNav">
+            <input type="search" name="search" id="search">
+            <button class="btn btn-sm">search</button>
+        </div>
+        <div id="rightNav2">
+            <div class="searchEnd" onclick="toggleSearchEnd()">
+                <i class="fas fa-times"></i>
+            </div>
+            <input type="search" name="search" id="search2">
+            <button class="btn btn-sm">search</button>
+        </div>
+        <div class="search-icon" onclick="toggleSearch()">
+            <i class="fas fa-search"></i>
+        </div>
+    </nav>
+
+    <section id="home" class="first-section background">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big" id="anim">T</p>
+                <p class="text-sm">Spread your bussiness all over the world. Get Your websites from us and promote your
+                    bussiness</p>
+                <div class="buttons">
+                    <a href="/login.html"><button class="btn">Login</button></a>
+                    <button class="btn">Watch Samples</button>
+                </div>
+            </div>
+            <div class="secondHalf">
+                <img src="https://cdn.pixabay.com/photo/2014/05/02/21/50/laptop-336378_960_720.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="para">
+            <p class="sectionTag text-big">our goal is to make powerfull
+                <strong>in</strong><b>d</b><span>ia</span>
+            </p>
+            <p class="sectionSubTag text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eius
+                repudiandae ad sed nemo dolorem officiis harum dicta cumque totam! Soluta animi et quam consectetur,
+                nostrum ea eveniet magni minima dolore earum, cum nesciunt labore aspernatur hic fugiat quod. Voluptatum
+                aut nemo placeat quisquam illo! Delectus tempora asperiores eius adipisci?</p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/1600x900/?coding" alt="" class="image-fluid">
+        </div>
+    </section>
+
+    <section class="section sec-left">
+        <div class="para">
+            <p class="sectionTag text-big">worldwide integration and development</p>
+            <p class="sectionSubTag text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem
+                ipsam culpa dignissimos doloribus quo nemo, repellendus optio quis, sunt quidem assumenda voluptates,
+                aliquam animi. Adipisci possimus deserunt consequuntur nobis eum dolorem placeat quaerat officia numquam
+                aliquid molestias aspernatur, assumenda id voluptatum quae voluptas, maxime sit ad obcaecati corrupti
+                consequatur odio?
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/1600x900/?trees" alt="" class="image-fluid">
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="para">
+            <p class="sectionTag text-big">Spread your bussiness all over the world</p>
+            <p class="sectionSubTag text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, iste quas.
+                Obcaecati veniam ad culpa iusto voluptas quibusdam eos, in atque quasi, eveniet molestias, nam ut sed.
+                Labore, repellat distinctio dolores accusamus totam vitae asperiores odio itaque veritatis ea. Dolorum
+                doloribus nesciunt animi cumque iusto sint! Ratione eligendi ducimus voluptate?</p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/1600x900/?books" alt="" class="image-fluid">
+        </div>
+    </section>
+
+
+    <div id="contact">
+        <h2>Contact Us</h2>
+        <form action="/contact" method="POST">
+            <div class="inputs">
+                <input type="text" name="name" class="input" id="name" placeholder="Enter Your Name....">
+            </div>
+            <div class="inputs">
+                <input type="text" name="phone" class="input" id="phone" placeholder="Enter Your phone....">
+            </div>
+            <div class="inputs">
+                <input type="email" name="email" class="input" id="email" placeholder="Enter Your email....">
+            </div>
+            <div class="inputs">
+                <textarea name="msg" id="text" cols="30" rows="10" placeholder="Express your concern...."></textarea>
+            </div>
+            <button class="btn btn-dark">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <h3>copyright &copy; www.futuristicindia.com | All rights reserved</h3>
+    </footer>
+
+    <script src="/static/js/index.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+
+        $('form').on('submit', (e) => {
+            e.preventDefault();
+
+            const name = $('#name').val().trim();
+            const phone = $('#phone').val().trim();
+            const email = $('#email').val().trim();
+            const text = $('#text').val().trim();
+
+            const data = {
+                name,
+                phone,
+                email,
+                text
+            }
+
+            $.post('/email', data, '')
+        })
+
+    </script> -->
+</body>
+
+</html>

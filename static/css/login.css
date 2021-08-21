@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(0, 0, 0, 0.69) url('https://cdn.pixabay.com/photo/2015/09/18/11/47/london-eye-945497_960_720.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 100vh;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    height: 100px;
+    margin: 64px 14px 7px 14px;
+}
+
+h1{
+    color: cadetblue;
+    font-family: 'Mate SC', serif;
+}
+
+.line{
+    background: #696969;
+    padding: 2px;
+    border-radius: 11px;
+    border: 1px solid black;
+    margin: 7px;
+}
+
+.other{
+    background: rgba(0, 0, 0, 0.23);
+    border-radius: 11px;
+    max-width: 80%;
+    padding: 14px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    max-width: 50%;
+    margin: auto;
+}
+
+.logo img{
+    max-width: 75px;
+    border: 2px solid white;
+    border-radius: 100px;
+    transition: all 0.5s ease-in-out;
+}
+
+.logo img:hover{
+    transform: translateY(-5px)
+}
+
+form{
+    display: block;
+    max-width: 85%;
+    margin: 14px auto;
+}
+
+.inputs{
+    margin: 18px 14px;
+}
+
+input{
+    letter-spacing: 1px;
+    max-width: 100%;
+    color: white;
+    background: rgba(0, 0, 0, 0.123);
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 7px;
+    padding: 3px 11px;
+}
+
+#btn{
+    max-width: 100%;
+    text-align: center;
+    margin: 14px;
+}
+
+.btn{
+    color: white;
+    border: 2px solid black;
+    border-radius: 11px;
+    background: rgba(0, 0, 0, 0.123);
+    padding: 2px 18px;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background: rgba(0, 0, 0, 0.753);
+    color: grey;
+}
+
+.btn-other{
+    padding: 4px 34px;
+    background: rgba(100, 100, 100, 0.411);
+}
+
+.btn-other:hover{
+    color: cadetblue;
+    background: rgba(0, 0, 0, 0.973);
+}
+
+.signup{
+    display: block;
+    text-align: center;
+    margin: 4px;
+    padding: 7px;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+.button{
+    margin: 4px 0px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h3{
+    color: cadetblue;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 1px 2px;
+    padding: 0px 7px;
+    font-size: 1.25rem;
+}
+
+@media screen and (max-width:280px){
+    .other{
+        max-width: 90%;
+    }
+}
